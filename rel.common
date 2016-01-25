@@ -109,8 +109,8 @@ set_svn_local (){
 # assume we are in the top directory 
 # version is in $1
 fix_configure_ac (){
-  rm svnversion.sh
-  check_err "rm svnver"
+  rm version.sh
+  check_err "rm ver"
   sed -i "s/\(AC_INIT.*\)m4_.*)\(.*rickyrockrat.*\)/\1[$1]\2/" configure.ac
   check_err "update configure.ac"
   ./autogen.sh

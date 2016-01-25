@@ -20,11 +20,6 @@
 # Run from trunk, it creates directories in the parent.
 #
 # Notes:
-# Do a svn cp:
-#  svn cp  -m"prep for 1.0.2rc3"  https://parcellite.svn.sourceforge.net/svnroot/parcellite/trunk  https://parcellite.svn.sourceforge.net/svnroot/parcellite/tags/1.0.2rc3
-# Do a svn co:
-#  svn co https://parcellite.svn.sourceforge.net/svnroot/parcellite/tags/1.0.2rc3
-# Remove svnversion.sh
 # Change the configure.ac to the new version:
 # AC_INIT([parcellite], [1.0.2rc2], [gpib@rickyrockrat.com])
 # Update ChangeLog
@@ -36,7 +31,7 @@
 # automake
 # autoconf
 # Create the tar ball:
-#  tar --exclude .svn -cjf 1.0.2rc3.tar.bz2 1.0.2rc3
+#  tar --exclude .git -cjf 1.0.2rc3.tar.bz2 1.0.2rc3
 #  mkdir build
 #  cd build
 #  tar -xjf ../1.0.2rc3.tar.bz2
